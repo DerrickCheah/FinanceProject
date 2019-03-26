@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MainviewComponent } from './mainview/mainview.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: "", redirectTo: "/mainview", pathMatch: "full"},
+  {path: "mainview", component: MainviewComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
